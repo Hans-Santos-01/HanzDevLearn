@@ -1,0 +1,20 @@
+/* Footer Style */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #DBCDAD;
+    background-image: url('../images/header-bgk.jpg');
+    background-position: center;
+    background-size: cover;
+
+    p {
+        margin: 5px;
+        font-size: 1.3em;
+        color: #363636;
+    }
+
+}

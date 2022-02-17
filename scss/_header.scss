@@ -1,0 +1,30 @@
+/* Header Styles */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    // Fallback Color
+    background-color: rgba($color: #363636, $alpha: 1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+ 
+
+
+    .nav-full {
+        justify-content: center;
+        z-index: 999;
+        opacity: 1;
+        width: 100%;
+    }
+
+    @media (min-width:768px) {
+
+        background-color: rgba($color: #000000, $alpha: 0);
+        position: static;
+
+    }
+
+}

@@ -1,0 +1,918 @@
+@charset "UTF-8";
+/*HTML Reset*/
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* Body Reset */
+body {
+  margin: 0;
+  padding: 0;
+  /* Backup Color */
+  background-color: rgba(245, 245, 245, 0.1);
+  background-position: center;
+  background-attachment: fixed;
+  scroll-behavior: smooth; }
+
+/* Image Reset */
+img {
+  width: 100%;
+  height: auto; }
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  /* typography */
+  font-family: 'Oswald', sans-serif; }
+
+/* typography */
+p {
+  font-family: 'Oswald', sans-serif; }
+
+li {
+  font-family: 'Oswald', sans-serif; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.wrapper {
+  scroll-behavior: smooth;
+  display: block;
+  position: relative; }
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #363636;
+  position: sticky;
+  top: 0;
+  width: 100%; }
+  header .nav-full {
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    width: 100%; }
+  @media (min-width: 768px) {
+    header {
+      background-color: rgba(0, 0, 0, 0);
+      position: static; } }
+
+/*Home Nav*/
+.home-nav {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: 'nav nav burger';
+  z-index: 999; }
+  .home-nav .img-nav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    grid-area: 'nav'; }
+  .home-nav .icon-moon-nav svg path {
+    fill: #363633; }
+  .home-nav .icon-moon-nav svg:hover path {
+    fill: #016795;
+    transition: 0.5s; }
+  .home-nav .mobile-nav {
+    grid-area: 'burger';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .home-nav .mobile-nav {
+        display: none; } }
+  .home-nav button {
+    margin: 5px;
+    font-size: 1em;
+    padding: 5px;
+    color: whitesmoke;
+    background-color: #107AB0;
+    border-radius: 10px;
+    font-family: 'Oswald', 'sans-serif'; }
+  @media (min-width: 768px) {
+    .home-nav {
+      display: flex;
+      flex-direction: column; } }
+
+/* Hamburger Nav */
+.hamburger-nav {
+  cursor: pointer; }
+  @media (min-width: 768px) {
+    .hamburger-nav {
+      display: none; } }
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 6px;
+  background-color: #016795;
+  margin: 3px 0;
+  transition: 0.4s; }
+
+/* Nav - Nav */
+.nav-nav {
+  width: 100%; }
+  .nav-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    display: none;
+    font-weight: bold; }
+    .nav-nav ul li {
+      list-style-type: none;
+      padding: 10px 5px;
+      width: 100%; }
+      .nav-nav ul li a {
+        text-decoration: none;
+        color: #016795;
+        background-color: whitesmoke;
+        padding: 8px;
+        border: solid 3px #58656D;
+        display: block;
+        cursor: pointer;
+        font-family: 'Julius Sans One', sans-serif; }
+      .nav-nav ul li a:hover, .nav-nav ul li a:active {
+        background-color: #363633;
+        transition: 0.5s;
+        cursor: pointer; }
+  @media (min-width: 768px) {
+    .nav-nav {
+      display: flex;
+      justify-content: center;
+      width: unset; }
+      .nav-nav ul {
+        display: flex;
+        flex-direction: row; }
+        .nav-nav ul li a {
+          display: initial;
+          background-color: rgba(255, 255, 255, 0.4);
+          font-size: 1.1em;
+          border: none;
+          cursor: pointer; }
+        .nav-nav ul li a:hover, .nav-nav ul li a:active {
+          background-color: white;
+          border-bottom: 5px solid #016795;
+          transition: 0.3s; } }
+
+/* display the list when clicked */
+.show .navItems {
+  display: flex; }
+
+/* Main Styles */
+main {
+  /* Intro Main */
+  /* Skills Main */
+  /* Projects Main */
+  /* Contact Main */
+  /* Media Queries */ }
+  main h2 {
+    color: #016795; }
+  main .intro-main-wrap .intro-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    main .intro-main-wrap .intro-main h1 {
+      padding-bottom: 10px;
+      border-bottom: 3px solid #58656D;
+      font-family: 'Arvo', serif; }
+    main .intro-main-wrap .intro-main .intro-name {
+      margin: 30px 30px;
+      font-size: 1.7em;
+      color: #016795; }
+      main .intro-main-wrap .intro-main .intro-name .intro-logo {
+        display: flex;
+        justify-content: center; }
+        main .intro-main-wrap .intro-main .intro-name .intro-logo img {
+          flex: 0 0 250px;
+          border-radius: 50px;
+          margin: 20px; }
+      main .intro-main-wrap .intro-main .intro-name h1 {
+        margin: 20px; }
+      main .intro-main-wrap .intro-main .intro-name h2 {
+        margin: 20px;
+        font-family: 'Arvo', serif; }
+    main .intro-main-wrap .intro-main .intro-about {
+      padding: 25px 0px;
+      text-align: left;
+      background-color: #343837; }
+      main .intro-main-wrap .intro-main .intro-about h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 3em;
+        font-family: 'Arvo', serif;
+        text-shadow: 3px 3px #363636;
+        color: #F2F2F2; }
+      main .intro-main-wrap .intro-main .intro-about p {
+        margin: 20px;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: #F2F2F2;
+        text-shadow: 1px 1px #363636; }
+  main .skills-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; }
+    main .skills-main h2 {
+      padding: 20px 0px;
+      margin: 10px 40px;
+      border-bottom: 3px solid #58656D;
+      font-size: 3em;
+      font-family: 'Arvo', serif; }
+    main .skills-main .skills-gallery {
+      padding: 25px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-areas: 'skills skills skills' 'skills skills skills' 'skills skills skills';
+      grid-gap: 20px 20px; }
+    main .skills-main .skills-01, main .skills-main .skills-02, main .skills-main .skills-03,
+    main .skills-main .skills-04, main .skills-main .skills-05, main .skills-main .skills-06,
+    main .skills-main .skills-07, main .skills-main .skills-08, main .skills-main .skills-09 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      grid-area: 'skills'; }
+      main .skills-main .skills-01 h3, main .skills-main .skills-02 h3, main .skills-main .skills-03 h3,
+      main .skills-main .skills-04 h3, main .skills-main .skills-05 h3, main .skills-main .skills-06 h3,
+      main .skills-main .skills-07 h3, main .skills-main .skills-08 h3, main .skills-main .skills-09 h3 {
+        font-family: 'Arvo', serif; }
+      main .skills-main .skills-01 .img-skills, main .skills-main .skills-02 .img-skills, main .skills-main .skills-03 .img-skills,
+      main .skills-main .skills-04 .img-skills, main .skills-main .skills-05 .img-skills, main .skills-main .skills-06 .img-skills,
+      main .skills-main .skills-07 .img-skills, main .skills-main .skills-08 .img-skills, main .skills-main .skills-09 .img-skills {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        main .skills-main .skills-01 .img-skills svg, main .skills-main .skills-02 .img-skills svg, main .skills-main .skills-03 .img-skills svg,
+        main .skills-main .skills-04 .img-skills svg, main .skills-main .skills-05 .img-skills svg, main .skills-main .skills-06 .img-skills svg,
+        main .skills-main .skills-07 .img-skills svg, main .skills-main .skills-08 .img-skills svg, main .skills-main .skills-09 .img-skills svg {
+          width: 64px; }
+  main .projects-main .project-01, main .projects-main .project-02, main .projects-main .project-03,
+  main .projects-main .project-04, main .projects-main .project-05 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    background-color: white; }
+    main .projects-main .project-01 h3, main .projects-main .project-02 h3, main .projects-main .project-03 h3,
+    main .projects-main .project-04 h3, main .projects-main .project-05 h3 {
+      color: #016795; }
+  main .projects-main .project-title {
+    border-bottom: #58656D solid 3px;
+    font-size: 3em;
+    font-family: 'Arvo', serif;
+    margin: 30px 30px; }
+  main .projects-main h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 3em;
+    font-family: 'Arvo', serif; }
+  main .projects-main h3 {
+    text-align: center;
+    padding: 10px; }
+  main .projects-main p {
+    text-align: center; }
+  main .projects-main .project-01-wrap {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    main .projects-main .project-01-wrap .project-img {
+      display: none; }
+    main .projects-main .project-01-wrap .project-01 {
+      border: 5px solid #58656D;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 5px; }
+      main .projects-main .project-01-wrap .project-01 h3 {
+        font-size: 2.3em; }
+      main .projects-main .project-01-wrap .project-01 h4 {
+        text-align: center;
+        font-size: 1.7em; }
+      main .projects-main .project-01-wrap .project-01 .members-project ul {
+        padding: 0;
+        text-align: center;
+        list-style-type: none; }
+        main .projects-main .project-01-wrap .project-01 .members-project ul li {
+          padding: 5px;
+          font-size: 1.4em; }
+          main .projects-main .project-01-wrap .project-01 .members-project ul li a {
+            text-decoration: none;
+            color: #016795; }
+        main .projects-main .project-01-wrap .project-01 .members-project ul li::before {
+          content: url("../images/user.svg") " "; }
+      main .projects-main .project-01-wrap .project-01 .improve-project {
+        padding: 5px; }
+        main .projects-main .project-01-wrap .project-01 .improve-project ul {
+          padding: 0;
+          text-align: center;
+          list-style-type: none; }
+          main .projects-main .project-01-wrap .project-01 .improve-project ul li::before {
+            content: url("../images/text-bubble.svg") " "; }
+      main .projects-main .project-01-wrap .project-01 .description-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+        border: 5px solid #58656D; }
+        main .projects-main .project-01-wrap .project-01 .description-main p {
+          text-align: left;
+          margin: 10px; }
+        main .projects-main .project-01-wrap .project-01 .description-main ul {
+          padding: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style-type: none; }
+          main .projects-main .project-01-wrap .project-01 .description-main ul li {
+            margin: 0px 20px;
+            text-align: justify; }
+            main .projects-main .project-01-wrap .project-01 .description-main ul li a {
+              text-decoration: none;
+              border: 3px solid whitesmoke;
+              padding: 5px;
+              display: block;
+              color: whitesmoke;
+              background-color: #016795; }
+            main .projects-main .project-01-wrap .project-01 .description-main ul li a:hover, main .projects-main .project-01-wrap .project-01 .description-main ul li a:active {
+              background-color: #007bff;
+              transition: 0.5s; }
+  main .projects-main .project-02-wrap {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    main .projects-main .project-02-wrap .project-img {
+      display: none;
+      background-image: url("../images/portfolio-img.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 5px solid #58656D; }
+  main .projects-main .project-03-wrap {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    main .projects-main .project-03-wrap .project-img {
+      display: none;
+      background-image: url("../images/react-img.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 5px solid #58656D; }
+  main .projects-main .project-04-wrap {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    main .projects-main .project-04-wrap .project-img {
+      display: none;
+      background-image: url("../images/javascript-img.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 5px solid #58656D; }
+  main .projects-main .project-05-wrap {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    main .projects-main .project-05-wrap .project-img {
+      display: none;
+      background-image: url("../images/darkmode-img.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 5px solid #58656D; }
+  main .projects-main .project-02, main .projects-main .project-03,
+  main .projects-main .project-04, main .projects-main .project-05 {
+    border: 5px solid #58656D;
+    margin: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .projects-main .project-02 h3, main .projects-main .project-03 h3,
+    main .projects-main .project-04 h3, main .projects-main .project-05 h3 {
+      font-size: 2.5em; }
+    main .projects-main .project-02 h4, main .projects-main .project-03 h4,
+    main .projects-main .project-04 h4, main .projects-main .project-05 h4 {
+      text-align: center;
+      font-size: 1.7em; }
+    main .projects-main .project-02 .members-project ul, main .projects-main .project-03 .members-project ul,
+    main .projects-main .project-04 .members-project ul, main .projects-main .project-05 .members-project ul {
+      padding: 0;
+      text-align: center;
+      list-style-type: none;
+      font-size: 1.3em; }
+      main .projects-main .project-02 .members-project ul li, main .projects-main .project-03 .members-project ul li,
+      main .projects-main .project-04 .members-project ul li, main .projects-main .project-05 .members-project ul li {
+        padding: 5px; }
+        main .projects-main .project-02 .members-project ul li a, main .projects-main .project-03 .members-project ul li a,
+        main .projects-main .project-04 .members-project ul li a, main .projects-main .project-05 .members-project ul li a {
+          text-decoration: none;
+          color: #016795; }
+      main .projects-main .project-02 .members-project ul li::before, main .projects-main .project-03 .members-project ul li::before,
+      main .projects-main .project-04 .members-project ul li::before, main .projects-main .project-05 .members-project ul li::before {
+        content: url("../images/user.svg") " "; }
+    main .projects-main .project-02 .improve-project ul, main .projects-main .project-03 .improve-project ul,
+    main .projects-main .project-04 .improve-project ul, main .projects-main .project-05 .improve-project ul {
+      padding: 0;
+      text-align: center;
+      list-style-type: none; }
+      main .projects-main .project-02 .improve-project ul li::before, main .projects-main .project-03 .improve-project ul li::before,
+      main .projects-main .project-04 .improve-project ul li::before, main .projects-main .project-05 .improve-project ul li::before {
+        content: url("../images/text-bubble.svg") " "; }
+    main .projects-main .project-02 .description-main, main .projects-main .project-03 .description-main,
+    main .projects-main .project-04 .description-main, main .projects-main .project-05 .description-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+      border: 5px solid #58656D; }
+      main .projects-main .project-02 .description-main p, main .projects-main .project-03 .description-main p,
+      main .projects-main .project-04 .description-main p, main .projects-main .project-05 .description-main p {
+        text-align: left;
+        margin: 10px; }
+      main .projects-main .project-02 .description-main ul, main .projects-main .project-03 .description-main ul,
+      main .projects-main .project-04 .description-main ul, main .projects-main .project-05 .description-main ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none; }
+        main .projects-main .project-02 .description-main ul li, main .projects-main .project-03 .description-main ul li,
+        main .projects-main .project-04 .description-main ul li, main .projects-main .project-05 .description-main ul li {
+          margin: 0px 10px; }
+          main .projects-main .project-02 .description-main ul li a, main .projects-main .project-03 .description-main ul li a,
+          main .projects-main .project-04 .description-main ul li a, main .projects-main .project-05 .description-main ul li a {
+            text-decoration: none;
+            border: 3px solid whitesmoke;
+            border-radius: 5px;
+            padding: 8px;
+            display: block;
+            color: whitesmoke;
+            background-color: #016795; }
+          main .projects-main .project-02 .description-main ul li a:hover, main .projects-main .project-02 .description-main ul li a:active, main .projects-main .project-03 .description-main ul li a:hover, main .projects-main .project-03 .description-main ul li a:active,
+          main .projects-main .project-04 .description-main ul li a:hover,
+          main .projects-main .project-04 .description-main ul li a:active, main .projects-main .project-05 .description-main ul li a:hover, main .projects-main .project-05 .description-main ul li a:active {
+            background-color: #007bff;
+            transition: 0.5s; }
+  main .projects-main .tools-project .tools-img {
+    display: grid;
+    grid-template-columns: repeat(3, 64px);
+    grid-gap: 10px 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px; }
+    main .projects-main .tools-project .tools-img img {
+      grid-area: 'skills';
+      flex: 0 0 64px; }
+  main .contact-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #343837;
+    color: whitesmoke; }
+    main .contact-main h2 {
+      padding: 10px;
+      border-bottom: 3px solid #58656D;
+      margin: 20px 40px;
+      font-family: 'Arvo', serif;
+      color: whitesmoke; }
+    main .contact-main .contact-info {
+      padding: 10px; }
+      main .contact-main .contact-info p {
+        padding: 10px; }
+    main .contact-main .contact-social ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 0; }
+      main .contact-main .contact-social ul li {
+        display: flex;
+        padding: 10px; }
+        main .contact-main .contact-social ul li img {
+          flex: 0 0 50px; }
+  @media (min-width: 440px) {
+    main .project-01-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .project-01-wrap .project-01 {
+        width: 420px; }
+    main .project-02-wrap, main .project-03-wrap,
+    main .project-04-wrap, main .project-05-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .project-02-wrap .project-02, main .project-02-wrap .project-03,
+      main .project-02-wrap .project-04, main .project-02-wrap .project-05, main .project-03-wrap .project-02, main .project-03-wrap .project-03,
+      main .project-03-wrap .project-04, main .project-03-wrap .project-05,
+      main .project-04-wrap .project-02,
+      main .project-04-wrap .project-03,
+      main .project-04-wrap .project-04,
+      main .project-04-wrap .project-05, main .project-05-wrap .project-02, main .project-05-wrap .project-03,
+      main .project-05-wrap .project-04, main .project-05-wrap .project-05 {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  @media (min-width: 550px) {
+    main .project-01-wrap .project-01 {
+      width: 500px; }
+      main .project-01-wrap .project-01 h3 {
+        font-size: 4em; }
+      main .project-01-wrap .project-01 .tools-project {
+        font-size: 1.3em; }
+      main .project-01-wrap .project-01 .members-project h4 {
+        font-size: 2em; }
+      main .project-01-wrap .project-01 .improve-project h4 {
+        font-size: 2em; }
+      main .project-01-wrap .project-01 .improve-project ul {
+        font-size: 1.2em; }
+      main .project-01-wrap .project-01 .description-main {
+        font-size: 1.3em; }
+    main .project-02-wrap .project-02, main .project-02-wrap .project-03,
+    main .project-02-wrap .project-04, main .project-02-wrap .project-05, main .project-03-wrap .project-02, main .project-03-wrap .project-03,
+    main .project-03-wrap .project-04, main .project-03-wrap .project-05,
+    main .project-04-wrap .project-02,
+    main .project-04-wrap .project-03,
+    main .project-04-wrap .project-04,
+    main .project-04-wrap .project-05, main .project-05-wrap .project-02, main .project-05-wrap .project-03,
+    main .project-05-wrap .project-04, main .project-05-wrap .project-05 {
+      width: 400px; }
+      main .project-02-wrap .project-02 h3, main .project-02-wrap .project-03 h3,
+      main .project-02-wrap .project-04 h3, main .project-02-wrap .project-05 h3, main .project-03-wrap .project-02 h3, main .project-03-wrap .project-03 h3,
+      main .project-03-wrap .project-04 h3, main .project-03-wrap .project-05 h3,
+      main .project-04-wrap .project-02 h3,
+      main .project-04-wrap .project-03 h3,
+      main .project-04-wrap .project-04 h3,
+      main .project-04-wrap .project-05 h3, main .project-05-wrap .project-02 h3, main .project-05-wrap .project-03 h3,
+      main .project-05-wrap .project-04 h3, main .project-05-wrap .project-05 h3 {
+        font-size: 3em; }
+      main .project-02-wrap .project-02 .tools-project, main .project-02-wrap .project-03 .tools-project,
+      main .project-02-wrap .project-04 .tools-project, main .project-02-wrap .project-05 .tools-project, main .project-03-wrap .project-02 .tools-project, main .project-03-wrap .project-03 .tools-project,
+      main .project-03-wrap .project-04 .tools-project, main .project-03-wrap .project-05 .tools-project,
+      main .project-04-wrap .project-02 .tools-project,
+      main .project-04-wrap .project-03 .tools-project,
+      main .project-04-wrap .project-04 .tools-project,
+      main .project-04-wrap .project-05 .tools-project, main .project-05-wrap .project-02 .tools-project, main .project-05-wrap .project-03 .tools-project,
+      main .project-05-wrap .project-04 .tools-project, main .project-05-wrap .project-05 .tools-project {
+        font-size: 1.3em; }
+      main .project-02-wrap .project-02 .members-project h4, main .project-02-wrap .project-03 .members-project h4,
+      main .project-02-wrap .project-04 .members-project h4, main .project-02-wrap .project-05 .members-project h4, main .project-03-wrap .project-02 .members-project h4, main .project-03-wrap .project-03 .members-project h4,
+      main .project-03-wrap .project-04 .members-project h4, main .project-03-wrap .project-05 .members-project h4,
+      main .project-04-wrap .project-02 .members-project h4,
+      main .project-04-wrap .project-03 .members-project h4,
+      main .project-04-wrap .project-04 .members-project h4,
+      main .project-04-wrap .project-05 .members-project h4, main .project-05-wrap .project-02 .members-project h4, main .project-05-wrap .project-03 .members-project h4,
+      main .project-05-wrap .project-04 .members-project h4, main .project-05-wrap .project-05 .members-project h4 {
+        font-size: 2em; }
+      main .project-02-wrap .project-02 .improve-project h4, main .project-02-wrap .project-03 .improve-project h4,
+      main .project-02-wrap .project-04 .improve-project h4, main .project-02-wrap .project-05 .improve-project h4, main .project-03-wrap .project-02 .improve-project h4, main .project-03-wrap .project-03 .improve-project h4,
+      main .project-03-wrap .project-04 .improve-project h4, main .project-03-wrap .project-05 .improve-project h4,
+      main .project-04-wrap .project-02 .improve-project h4,
+      main .project-04-wrap .project-03 .improve-project h4,
+      main .project-04-wrap .project-04 .improve-project h4,
+      main .project-04-wrap .project-05 .improve-project h4, main .project-05-wrap .project-02 .improve-project h4, main .project-05-wrap .project-03 .improve-project h4,
+      main .project-05-wrap .project-04 .improve-project h4, main .project-05-wrap .project-05 .improve-project h4 {
+        font-size: 2em; }
+      main .project-02-wrap .project-02 .improve-project ul, main .project-02-wrap .project-03 .improve-project ul,
+      main .project-02-wrap .project-04 .improve-project ul, main .project-02-wrap .project-05 .improve-project ul, main .project-03-wrap .project-02 .improve-project ul, main .project-03-wrap .project-03 .improve-project ul,
+      main .project-03-wrap .project-04 .improve-project ul, main .project-03-wrap .project-05 .improve-project ul,
+      main .project-04-wrap .project-02 .improve-project ul,
+      main .project-04-wrap .project-03 .improve-project ul,
+      main .project-04-wrap .project-04 .improve-project ul,
+      main .project-04-wrap .project-05 .improve-project ul, main .project-05-wrap .project-02 .improve-project ul, main .project-05-wrap .project-03 .improve-project ul,
+      main .project-05-wrap .project-04 .improve-project ul, main .project-05-wrap .project-05 .improve-project ul {
+        font-size: 1.2em;
+        padding: 8px; }
+      main .project-02-wrap .project-02 .description-main, main .project-02-wrap .project-03 .description-main,
+      main .project-02-wrap .project-04 .description-main, main .project-02-wrap .project-05 .description-main, main .project-03-wrap .project-02 .description-main, main .project-03-wrap .project-03 .description-main,
+      main .project-03-wrap .project-04 .description-main, main .project-03-wrap .project-05 .description-main,
+      main .project-04-wrap .project-02 .description-main,
+      main .project-04-wrap .project-03 .description-main,
+      main .project-04-wrap .project-04 .description-main,
+      main .project-04-wrap .project-05 .description-main, main .project-05-wrap .project-02 .description-main, main .project-05-wrap .project-03 .description-main,
+      main .project-05-wrap .project-04 .description-main, main .project-05-wrap .project-05 .description-main {
+        font-size: 1.3em; } }
+  @media (min-width: 650px) {
+    main .skills-main .skills-gallery {
+      grid-gap: 60px 60px; }
+    main .skills-main .skills-01 h3, main .skills-main .skills-02 h3, main .skills-main .skills-03 h3,
+    main .skills-main .skills-04 h3, main .skills-main .skills-05 h3, main .skills-main .skills-06 h3,
+    main .skills-main .skills-07 h3, main .skills-main .skills-08 h3, main .skills-main .skills-09 h3 {
+      font-size: 2em; }
+    main .skills-main .skills-01 .img-skills svg, main .skills-main .skills-02 .img-skills svg, main .skills-main .skills-03 .img-skills svg,
+    main .skills-main .skills-04 .img-skills svg, main .skills-main .skills-05 .img-skills svg, main .skills-main .skills-06 .img-skills svg,
+    main .skills-main .skills-07 .img-skills svg, main .skills-main .skills-08 .img-skills svg, main .skills-main .skills-09 .img-skills svg {
+      width: 100px; } }
+  @media (min-width: 1000px) {
+    main .intro-main-wrap .intro-main .intro-name h1 {
+      font-size: 2.5em; }
+    main .intro-main-wrap .intro-main .intro-name h2 {
+      font-size: 2.6em; }
+    main .intro-main-wrap .intro-main .intro-about {
+      padding: 40px;
+      font-size: 1.4em; }
+    main .project-01-wrap .project-01-inner-wrap {
+      display: grid;
+      grid-template-areas: 'img' 'content';
+      grid-template-columns: 2fr;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: 20px; }
+      main .project-01-wrap .project-01-inner-wrap .project-img {
+        display: block;
+        grid-area: 'img'; }
+      main .project-01-wrap .project-01-inner-wrap .project-01 {
+        width: unset;
+        grid-area: 'content'; } }
+  @media (min-width: 1320px) {
+    main .project-02-wrap, main .project-03-wrap,
+    main .project-04-wrap, main .project-05-wrap {
+      display: flex;
+      justify-content: right;
+      align-items: center; }
+      main .project-02-wrap .project-02-inner-wrap, main .project-02-wrap .project-03-inner-wrap,
+      main .project-02-wrap .project-04-inner-wrap, main .project-02-wrap .project-05-inner-wrap, main .project-03-wrap .project-02-inner-wrap, main .project-03-wrap .project-03-inner-wrap,
+      main .project-03-wrap .project-04-inner-wrap, main .project-03-wrap .project-05-inner-wrap,
+      main .project-04-wrap .project-02-inner-wrap,
+      main .project-04-wrap .project-03-inner-wrap,
+      main .project-04-wrap .project-04-inner-wrap,
+      main .project-04-wrap .project-05-inner-wrap, main .project-05-wrap .project-02-inner-wrap, main .project-05-wrap .project-03-inner-wrap,
+      main .project-05-wrap .project-04-inner-wrap, main .project-05-wrap .project-05-inner-wrap {
+        display: grid;
+        grid-template-areas: 'screenshot content-main';
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 50px; }
+        main .project-02-wrap .project-02-inner-wrap .project-img, main .project-02-wrap .project-03-inner-wrap .project-img,
+        main .project-02-wrap .project-04-inner-wrap .project-img, main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+        main .project-03-wrap .project-04-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+        main .project-04-wrap .project-02-inner-wrap .project-img,
+        main .project-04-wrap .project-03-inner-wrap .project-img,
+        main .project-04-wrap .project-04-inner-wrap .project-img,
+        main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img,
+        main .project-05-wrap .project-04-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+          display: block;
+          grid-area: 'screenshot';
+          width: 600px;
+          height: 808px; }
+        main .project-02-wrap .project-02-inner-wrap .project-02, main .project-02-wrap .project-02-inner-wrap .project-03,
+        main .project-02-wrap .project-02-inner-wrap .project-04, main .project-02-wrap .project-02-inner-wrap .project-05, main .project-02-wrap .project-03-inner-wrap .project-02, main .project-02-wrap .project-03-inner-wrap .project-03,
+        main .project-02-wrap .project-03-inner-wrap .project-04, main .project-02-wrap .project-03-inner-wrap .project-05,
+        main .project-02-wrap .project-04-inner-wrap .project-02,
+        main .project-02-wrap .project-04-inner-wrap .project-03,
+        main .project-02-wrap .project-04-inner-wrap .project-04,
+        main .project-02-wrap .project-04-inner-wrap .project-05, main .project-02-wrap .project-05-inner-wrap .project-02, main .project-02-wrap .project-05-inner-wrap .project-03,
+        main .project-02-wrap .project-05-inner-wrap .project-04, main .project-02-wrap .project-05-inner-wrap .project-05, main .project-03-wrap .project-02-inner-wrap .project-02, main .project-03-wrap .project-02-inner-wrap .project-03,
+        main .project-03-wrap .project-02-inner-wrap .project-04, main .project-03-wrap .project-02-inner-wrap .project-05, main .project-03-wrap .project-03-inner-wrap .project-02, main .project-03-wrap .project-03-inner-wrap .project-03,
+        main .project-03-wrap .project-03-inner-wrap .project-04, main .project-03-wrap .project-03-inner-wrap .project-05,
+        main .project-03-wrap .project-04-inner-wrap .project-02,
+        main .project-03-wrap .project-04-inner-wrap .project-03,
+        main .project-03-wrap .project-04-inner-wrap .project-04,
+        main .project-03-wrap .project-04-inner-wrap .project-05, main .project-03-wrap .project-05-inner-wrap .project-02, main .project-03-wrap .project-05-inner-wrap .project-03,
+        main .project-03-wrap .project-05-inner-wrap .project-04, main .project-03-wrap .project-05-inner-wrap .project-05,
+        main .project-04-wrap .project-02-inner-wrap .project-02,
+        main .project-04-wrap .project-02-inner-wrap .project-03,
+        main .project-04-wrap .project-02-inner-wrap .project-04,
+        main .project-04-wrap .project-02-inner-wrap .project-05,
+        main .project-04-wrap .project-03-inner-wrap .project-02,
+        main .project-04-wrap .project-03-inner-wrap .project-03,
+        main .project-04-wrap .project-03-inner-wrap .project-04,
+        main .project-04-wrap .project-03-inner-wrap .project-05,
+        main .project-04-wrap .project-04-inner-wrap .project-02,
+        main .project-04-wrap .project-04-inner-wrap .project-03,
+        main .project-04-wrap .project-04-inner-wrap .project-04,
+        main .project-04-wrap .project-04-inner-wrap .project-05,
+        main .project-04-wrap .project-05-inner-wrap .project-02,
+        main .project-04-wrap .project-05-inner-wrap .project-03,
+        main .project-04-wrap .project-05-inner-wrap .project-04,
+        main .project-04-wrap .project-05-inner-wrap .project-05, main .project-05-wrap .project-02-inner-wrap .project-02, main .project-05-wrap .project-02-inner-wrap .project-03,
+        main .project-05-wrap .project-02-inner-wrap .project-04, main .project-05-wrap .project-02-inner-wrap .project-05, main .project-05-wrap .project-03-inner-wrap .project-02, main .project-05-wrap .project-03-inner-wrap .project-03,
+        main .project-05-wrap .project-03-inner-wrap .project-04, main .project-05-wrap .project-03-inner-wrap .project-05,
+        main .project-05-wrap .project-04-inner-wrap .project-02,
+        main .project-05-wrap .project-04-inner-wrap .project-03,
+        main .project-05-wrap .project-04-inner-wrap .project-04,
+        main .project-05-wrap .project-04-inner-wrap .project-05, main .project-05-wrap .project-05-inner-wrap .project-02, main .project-05-wrap .project-05-inner-wrap .project-03,
+        main .project-05-wrap .project-05-inner-wrap .project-04, main .project-05-wrap .project-05-inner-wrap .project-05 {
+          margin: 0;
+          width: unset;
+          grid-area: 'content-main'; }
+          main .project-02-wrap .project-02-inner-wrap .project-02 .description-main ul li, main .project-02-wrap .project-02-inner-wrap .project-03 .description-main ul li,
+          main .project-02-wrap .project-02-inner-wrap .project-04 .description-main ul li, main .project-02-wrap .project-02-inner-wrap .project-05 .description-main ul li, main .project-02-wrap .project-03-inner-wrap .project-02 .description-main ul li, main .project-02-wrap .project-03-inner-wrap .project-03 .description-main ul li,
+          main .project-02-wrap .project-03-inner-wrap .project-04 .description-main ul li, main .project-02-wrap .project-03-inner-wrap .project-05 .description-main ul li,
+          main .project-02-wrap .project-04-inner-wrap .project-02 .description-main ul li,
+          main .project-02-wrap .project-04-inner-wrap .project-03 .description-main ul li,
+          main .project-02-wrap .project-04-inner-wrap .project-04 .description-main ul li,
+          main .project-02-wrap .project-04-inner-wrap .project-05 .description-main ul li, main .project-02-wrap .project-05-inner-wrap .project-02 .description-main ul li, main .project-02-wrap .project-05-inner-wrap .project-03 .description-main ul li,
+          main .project-02-wrap .project-05-inner-wrap .project-04 .description-main ul li, main .project-02-wrap .project-05-inner-wrap .project-05 .description-main ul li, main .project-03-wrap .project-02-inner-wrap .project-02 .description-main ul li, main .project-03-wrap .project-02-inner-wrap .project-03 .description-main ul li,
+          main .project-03-wrap .project-02-inner-wrap .project-04 .description-main ul li, main .project-03-wrap .project-02-inner-wrap .project-05 .description-main ul li, main .project-03-wrap .project-03-inner-wrap .project-02 .description-main ul li, main .project-03-wrap .project-03-inner-wrap .project-03 .description-main ul li,
+          main .project-03-wrap .project-03-inner-wrap .project-04 .description-main ul li, main .project-03-wrap .project-03-inner-wrap .project-05 .description-main ul li,
+          main .project-03-wrap .project-04-inner-wrap .project-02 .description-main ul li,
+          main .project-03-wrap .project-04-inner-wrap .project-03 .description-main ul li,
+          main .project-03-wrap .project-04-inner-wrap .project-04 .description-main ul li,
+          main .project-03-wrap .project-04-inner-wrap .project-05 .description-main ul li, main .project-03-wrap .project-05-inner-wrap .project-02 .description-main ul li, main .project-03-wrap .project-05-inner-wrap .project-03 .description-main ul li,
+          main .project-03-wrap .project-05-inner-wrap .project-04 .description-main ul li, main .project-03-wrap .project-05-inner-wrap .project-05 .description-main ul li,
+          main .project-04-wrap .project-02-inner-wrap .project-02 .description-main ul li,
+          main .project-04-wrap .project-02-inner-wrap .project-03 .description-main ul li,
+          main .project-04-wrap .project-02-inner-wrap .project-04 .description-main ul li,
+          main .project-04-wrap .project-02-inner-wrap .project-05 .description-main ul li,
+          main .project-04-wrap .project-03-inner-wrap .project-02 .description-main ul li,
+          main .project-04-wrap .project-03-inner-wrap .project-03 .description-main ul li,
+          main .project-04-wrap .project-03-inner-wrap .project-04 .description-main ul li,
+          main .project-04-wrap .project-03-inner-wrap .project-05 .description-main ul li,
+          main .project-04-wrap .project-04-inner-wrap .project-02 .description-main ul li,
+          main .project-04-wrap .project-04-inner-wrap .project-03 .description-main ul li,
+          main .project-04-wrap .project-04-inner-wrap .project-04 .description-main ul li,
+          main .project-04-wrap .project-04-inner-wrap .project-05 .description-main ul li,
+          main .project-04-wrap .project-05-inner-wrap .project-02 .description-main ul li,
+          main .project-04-wrap .project-05-inner-wrap .project-03 .description-main ul li,
+          main .project-04-wrap .project-05-inner-wrap .project-04 .description-main ul li,
+          main .project-04-wrap .project-05-inner-wrap .project-05 .description-main ul li, main .project-05-wrap .project-02-inner-wrap .project-02 .description-main ul li, main .project-05-wrap .project-02-inner-wrap .project-03 .description-main ul li,
+          main .project-05-wrap .project-02-inner-wrap .project-04 .description-main ul li, main .project-05-wrap .project-02-inner-wrap .project-05 .description-main ul li, main .project-05-wrap .project-03-inner-wrap .project-02 .description-main ul li, main .project-05-wrap .project-03-inner-wrap .project-03 .description-main ul li,
+          main .project-05-wrap .project-03-inner-wrap .project-04 .description-main ul li, main .project-05-wrap .project-03-inner-wrap .project-05 .description-main ul li,
+          main .project-05-wrap .project-04-inner-wrap .project-02 .description-main ul li,
+          main .project-05-wrap .project-04-inner-wrap .project-03 .description-main ul li,
+          main .project-05-wrap .project-04-inner-wrap .project-04 .description-main ul li,
+          main .project-05-wrap .project-04-inner-wrap .project-05 .description-main ul li, main .project-05-wrap .project-05-inner-wrap .project-02 .description-main ul li, main .project-05-wrap .project-05-inner-wrap .project-03 .description-main ul li,
+          main .project-05-wrap .project-05-inner-wrap .project-04 .description-main ul li, main .project-05-wrap .project-05-inner-wrap .project-05 .description-main ul li {
+            margin: 0px 30px; }
+      main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+      main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+        height: 989px; }
+      main .project-02-wrap .project-04-inner-wrap .project-img, main .project-03-wrap .project-04-inner-wrap .project-img,
+      main .project-04-wrap .project-04-inner-wrap .project-img, main .project-05-wrap .project-04-inner-wrap .project-img {
+        height: 777px; }
+      main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+      main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+        height: 746px; } }
+  @media (min-width: 1342px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 777px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 989px; }
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; } }
+  @media (min-width: 1452px) {
+    main .project-02-wrap .project-04-inner-wrap .project-img, main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img, main .project-05-wrap .project-04-inner-wrap .project-img {
+      height: 746px; } }
+  @media (min-width: 1510px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      width: 850px;
+      height: 808px; }
+    main .project-02-wrap .project-02-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img {
+      height: 837px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      width: 850px;
+      height: 1020px; }
+    main .project-02-wrap .project-04-inner-wrap .project-img, main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img, main .project-05-wrap .project-04-inner-wrap .project-img {
+      height: 777px; }
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 777px; } }
+  @media (min-width: 1515px) {
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 989px; } }
+  @media (min-width: 1533px) {
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; } }
+  @media (min-width: 1566px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img {
+      height: 808px; } }
+  @media (min-width: 1592px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 777px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 989px; }
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; } }
+  @media (min-width: 1622px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 958px; } }
+  @media (min-width: 1626px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 777px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 989px; }
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; } }
+  @media (min-width: 1872px) {
+    main .project-02-wrap .project-02-inner-wrap .project-img,
+    main .project-02-wrap .project-04-inner-wrap .project-img,
+    main .project-02-wrap .project-05-inner-wrap .project-img, main .project-03-wrap .project-02-inner-wrap .project-img,
+    main .project-03-wrap .project-04-inner-wrap .project-img,
+    main .project-03-wrap .project-05-inner-wrap .project-img,
+    main .project-04-wrap .project-02-inner-wrap .project-img,
+    main .project-04-wrap .project-04-inner-wrap .project-img,
+    main .project-04-wrap .project-05-inner-wrap .project-img, main .project-05-wrap .project-02-inner-wrap .project-img,
+    main .project-05-wrap .project-04-inner-wrap .project-img,
+    main .project-05-wrap .project-05-inner-wrap .project-img {
+      height: 746px; }
+    main .project-02-wrap .project-03-inner-wrap .project-img, main .project-03-wrap .project-03-inner-wrap .project-img,
+    main .project-04-wrap .project-03-inner-wrap .project-img, main .project-05-wrap .project-03-inner-wrap .project-img {
+      height: 958px; } }
+
+/* Footer Style */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #DBCDAD;
+  background-image: url("../images/header-bgk.jpg");
+  background-position: center;
+  background-size: cover; }
+  footer p {
+    margin: 5px;
+    font-size: 1.3em;
+    color: #363636; }
+
+/*# sourceMappingURL=styles.css.map */

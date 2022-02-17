@@ -1,0 +1,157 @@
+// Nav Styles
+
+
+/*Home Nav*/
+
+
+
+.home-nav {
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-areas: 
+	'nav nav burger';
+	z-index: 999;
+
+	.img-nav {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		grid-area: 'nav';
+	}
+
+	.icon-moon-nav {
+		svg path {
+			fill: #363633;
+		}
+
+		svg:hover path {
+			fill: $linkbkgrnd;
+			transition: 0.5s;
+		}
+	}
+
+	.mobile-nav {
+		grid-area: 'burger';
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		@media (min-width:768px) {
+			display: none;
+		}
+
+	}
+
+	button {
+		margin: 5px;
+		font-size: 1em;
+		padding: 5px;
+		color: whitesmoke;
+		background-color:#107AB0;
+		border-radius: 10px;
+		font-family: 'Oswald', 'sans-serif';
+	}
+
+	@media (min-width:768px) {
+		display: flex;
+		flex-direction: column;
+	}	
+
+}
+
+
+/* Hamburger Nav */
+.hamburger-nav {
+	cursor: pointer;
+
+	@media (min-width:768px) {
+		display: none;
+    }
+
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 6px;
+    background-color: $linkbkgrnd;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+
+/* Nav - Nav */
+
+.nav-nav {
+	width: 100%;
+	ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 1.5em;
+		padding: 0;
+		margin: 0;
+		font-size: 1.5em;
+		display: none;
+		font-weight: bold;
+		li {
+			list-style-type: none;
+			padding: 10px 5px;
+			width: 100%;
+			a {
+				text-decoration: none;
+				color: $linkbkgrnd;
+				background-color: whitesmoke;
+				padding: 8px;
+				border: solid 3px $blkbdr;
+				display: block;
+				cursor: pointer;
+				font-family: 'Julius Sans One', sans-serif;
+			}
+
+			a:hover, a:active {
+				background-color: #363633;
+				transition: 0.5s;
+				cursor: pointer;
+			}
+		}
+	}
+
+	@media (min-width:768px) {
+
+			display: flex;
+			justify-content: center;
+			width: unset;
+
+			
+		ul {
+			display: flex;
+			flex-direction: row;
+			li {
+				a {
+					display: initial;
+					background-color: rgba($color: white, $alpha: 0.4);
+					font-size: 1.1em;
+					border: none;
+					cursor: pointer;
+				}
+
+				a:hover, a:active {
+					background-color: rgba($color: white, $alpha: 1.0);
+					border-bottom: 5px solid $linkbkgrnd;
+					transition: 0.3s;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+/* display the list when clicked */
+.show .navItems {
+	display: flex;
+}
