@@ -1,0 +1,10 @@
+# Update robots.txt when new information are updated in the website 
+
+User-agent: *
+Disallow:/ cgi-bin/
+Disallow:/ code.txt
+Disallow:/ scripts/
+Disallow:/ .ftpquota
+Disallow:/ temp/
+Disallow:/ working-files/
+Disallow:/ First-Step/
